@@ -1,0 +1,26 @@
+<input type="text" id="codeInput" placeholder="_ _ _ _">
+<button onclick="checkCode()">Check</button>
+<p id="message"></p>
+
+<script>
+      const code = "2561";
+
+function checkCode() {
+  const userInput = document.getElementById("codeInput").value;
+  const message = document.getElementById("message");
+
+  if (userInput === code) {
+    message.textContent = "COngratulations. You may find your next step at";
+    message.style.color = "green";
+  } else {
+    message.textContent = "Find it.";
+    message.style.color = "black";
+  }
+}
+</script>
+<style>
+    body{
+        background-color: red;
+        text-align: center;
+    }
+</style>
